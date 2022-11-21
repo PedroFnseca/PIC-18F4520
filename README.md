@@ -14,3 +14,4 @@
 ## Projetos 📚
 
 - [x] [Acender e desligar led com botão](./Pisca%20led%20com%20bot%C3%A3o/)
+- [x] [Controlador de Volume](./Controlador%20de%20volume/)
