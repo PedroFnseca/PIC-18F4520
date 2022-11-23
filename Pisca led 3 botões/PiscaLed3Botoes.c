@@ -11,6 +11,8 @@ void start(void);
 void aumenta(void);
 void diminui(void);
 
+int i;
+
 void reset(){
   latd = 0;
 }
@@ -25,7 +27,7 @@ void stop(){
 
 void start(){
   while(1){
-    for(int i = 0; i < 8; i++){
+    for(i = 0; i < 8; i++){
       aumenta();
       if(portb.RB1 == 1){
         return;
@@ -35,7 +37,7 @@ void start(){
       }
     }
 
-    for(int i = 0; i < 8; i++){
+    for(i = 0; i < 8; i++){
       diminui();
       if(portb.RB1 == 1){
         return;
