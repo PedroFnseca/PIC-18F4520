@@ -31,29 +31,33 @@ void start(void);
 void aumenta(void);
 void diminui(void);
 
+int i;
+const int delay = 50;
+
 void reset(){
   latd = 0;
 }
 
-void stop(){} // Não usada no momento.
-
 void start(){
+  i = 0;
   while(1){
-    for(int i = 0; i < 8; i++){
+    for(i = 0; i < 8; i++){
+      delay_ms(delay);
       aumenta();
-      if(portb.RB1 == 1){
+      if(portb.RB1 == 0){
         return;
-      } else if(portb.RB1 == 0){
+      } else if(portb.RB0 == 0){
         reset();
         return;
       }
     }
 
-    for(int i = 0; i < 8; i++){
+    for(i = 0; i < 8; i++){
+      delay_ms(delay);
       diminui();
-      if(portb.RB1 == 1){
+      if(portb.RB1 == 0){
         return;
-      } else if(portb.RB1 == 0){
+      } else if(portb.RB0 == 0){
         reset();
         return;
       }
@@ -62,13 +66,13 @@ void start(){
 }
 
 void aumenta(){
-  delay_ms(300);
+  delay_ms(delay);
   latd = latd >> 1;
   latd.RB7 =~ latd.RB7;
 }
 
 void diminui(){
-  delay_ms(300);
+  delay_ms(delay);
   latd = latd << 1;
 }
 
@@ -78,11 +82,15 @@ void main() {
   trisb.RB2 = 1;   // START
 
   adcon1 = 15;
+  trisd = 0;
   latd = 0;
-  
+
   while(1){
      if(portb.RB2 == 0){
        start();
+     }
+     if(portb.RB0 == 0){
+       latd = 0;
      }
   }
 }
