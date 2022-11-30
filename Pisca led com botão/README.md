@@ -14,7 +14,7 @@
 
 ## Circuito 📌
 
-<!-- Colocar imagem aqui depois -->
+![image](https://user-images.githubusercontent.com/97262778/204833289-bea0f546-f80c-4957-b359-06dab9be25b3.png)
 
 <br>
 
