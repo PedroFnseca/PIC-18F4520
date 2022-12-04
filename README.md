@@ -1,12 +1,32 @@
 # Projetos com PIC-18F4520 👾 
-> ### Neste repositório estão alguns projetos realizados com o microcontrolador PIC-18F4520. Para o desenvolvimento do hardware foi utilizado o simulador Proteus Portable e para o desenvolvimento do software foi utilizado o compilador MikroC.
+> ### Neste repositório estão alguns projetos realizados com o microcontrolador PIC-18F4520. Para o desenvolvimento dos projetos foi utilizado o simulador Proteus Portable e o compilador MikroC.
 
 <br>
 
-## Pinout do PIC-18F4520 📌
+## O que é um PIC? 🤖
+
+### O PIC (Programmable Interface Controller) é um microcontrolador capaz de receber informações, tratar e realizar decisões através de um algoritmo em C. É encontrado em diversos circuitos eletrônicos e no nosso dia a dia é bem presente.
 
 <p align="center">
-<img src="https://camo.githubusercontent.com/d360bc03bf5400cf091cd81dc4d942001f9d61ed5ed725beb87cbffa155fc3f0/68747470733a2f2f7777772e6261756461656c6574726f6e6963612e636f6d2e62722f6d656469612f777973697779672f706963313866343532302d70696e6f75742e706e67">
+  <img src="https://user-images.githubusercontent.com/97262778/205469336-ce116a7a-185f-4e90-8c17-29b6ef4e80e4.png" width="300">
+</p>
+
+<br>
+
+## Como subir o código para o PIC? 👀
+
+### Para realizar a gravação do código no PIC é utilizado um gravador chamado PICkit 3 ou seus derivados. 
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/97262778/205469484-98318de7-1784-4a57-a535-7c6182751547.png" width="300">
+</p>
+
+## Pinagem do PIC-18F4520 📌
+
+### Quando realizamos um projeto com qualquer microncontrolador é necessário sempre ter em mãos a pinagem dele, pois assim evitará de fazer conexões erradas e acabar queimando o seu microchip
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/97262778/205469535-0a56a867-ac0b-4eba-9bd2-f23dc25ae2d1.png" width="500">
 </p>
 
 <br>
