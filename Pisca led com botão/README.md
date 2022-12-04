@@ -8,6 +8,7 @@
 - 1x PIC-18F4520
 - 1x Led
 - 1x Resistor 220Ω
+- 1x Resistor 10kΩ
 - 1x Botão
 - 1x Protoboard
 - Alguns Jumpers
@@ -36,7 +37,3 @@ void main() {
   }
 }
 ```
-
-<br>
-
-
